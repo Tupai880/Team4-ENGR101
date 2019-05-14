@@ -5,20 +5,44 @@
 #include <unistd.h>
 #include <time.h>
 
-/** Initialise Hardware */
 int main(){
-    
+/** Initialise Camera Hardware */  
+    int err;
+    err = init();
+    open_screen_stream();
+	take_picture();
+	update_screen();
 
+    /** Initialise Values */
+    int countRow = 0;
+    int countColumn = 0;
+    int totalWhite = 0;
+    //int totalRed = 0;
+    int totalBlack = 0;
+
+/** Quadrant 1 */
+
+
+/** Camera Methods */
+    open_screen_stream();
+    take_picture();
+    update_screen();
+
+    //for (int row = //startofright*)
 }
 
-/** Method for Camera */
-class camera{
-
+/** Move Right */
+    //Left Motor Forward
+class leftMotor{
+    void Forward(){
+        set_motor(n,40);
+    }
 
 }
+/** Move Left */
+    //Right Motor Forward
+class rightMotor{
 
-/** Method for Move Motors */
-class robotMotors{
 
 }
 
