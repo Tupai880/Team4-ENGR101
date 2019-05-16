@@ -30,8 +30,6 @@ int main(){
     //float rightRedness = 0;
     int Maximum = 0;
 
-/** Quadrant 1 */
-
 
 /** Camera Methods */
     open_screen_stream();
@@ -79,4 +77,8 @@ class rightMotor{
 
 }
 
- 
+/** Quadrant 1 */
+//connect to server
+//send to server 
+//receive message from server
+//send received message to server
