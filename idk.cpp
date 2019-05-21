@@ -88,10 +88,19 @@ int main(){
 			Direction = 2;
 			printf("Go Left\n");
 		}
+		if (rightGreeness < 0.5 && leftGreenness < 0.5) {
+			Direction = 0;
+			printf("Go straight\n");}
 		//if ((rightRedness > 0.9) || (leftRedness > 0.9)) {
 		//	Quadrent = Quadrent + 1;
 		//}
 	//}
+			if ( Direction = 0) {
+				set_motor(1,50);
+				hardware_exchange();
+				set_motor(5,50);
+				hardware_exchange();
+			}
 
 
 /** Move_Right */
@@ -103,9 +112,13 @@ int main(){
 			if (Direction == 1) {
 				set_motor(1,42);
 				hardware_exchange();
+				set_motor(5,54);
+				hardware_exchange();
 			}
 				if (Direction == 2) {
 				set_motor(1,54);
+				hardware_exchange();
+				set_motor(5,42);
 				hardware_exchange();
 			}		
 				//set_motor(1,54);
@@ -133,14 +146,11 @@ int main(){
 	//void Backward(){
 		
 			//if (Quadrent = 2) {
-			if (Direction == 1) {
-				set_motor(5,54);
-				hardware_exchange();
-			}
-				if (Direction == 2) {
-				set_motor(5,42);
-				hardware_exchange();
-			}
+			//if (Direction == 1) {
+			//}
+			//	if (Direction == 2) {
+				
+			//}
 				
 			//}
 			//if (Quadrent = 3) {
