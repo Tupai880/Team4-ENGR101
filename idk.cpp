@@ -33,7 +33,7 @@ int main(){
     int totalRedR = 0;
     float leftRedness = 0;
     int totalRedL = 0;
-    int Quadrent = 2;
+    //int Quadrent = 2;
     //int Maximum = 0;
     	
     //0 = left 1 = right
@@ -88,14 +88,14 @@ int main(){
 			Direction = 2;
 			printf("Go Left\n");
 		}
-		if (rightGreeness < 0.5 && leftGreenness < 0.5) {
+		if (rightGreenness < 0.5 && leftGreenness < 0.5) {
 			Direction = 0;
 			printf("Go straight\n");}
 		//if ((rightRedness > 0.9) || (leftRedness > 0.9)) {
 		//	Quadrent = Quadrent + 1;
 		//}
 	//}
-			if ( Direction = 0) {
+			if ( Direction == 0) {
 				set_motor(1,50);
 				hardware_exchange();
 				set_motor(5,50);
@@ -150,7 +150,7 @@ int main(){
 			//}
 			//	if (Direction == 2) {
 				
-			//}
+			//
 				
 			//}
 			//if (Quadrent = 3) {
